@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Montagem de Treino</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Montagem de Treino</h1>
+  </header>
+  
+  <main class="main-container">
+    <section class="aluno-selecao">
+      <label for="aluno">Selecione o Aluno:</label>
+      <select id="aluno">
+        <option value="" disabled selected>Escolha o aluno</option>
+        <option value="aluno1">Aluno 1</option>
+        <option value="aluno2">Aluno 2</option>
+        <!-- Mais alunos -->
+      </select>
+    </section>
+    
+    <section class="treino-montagem">
+      <h2>Criar Treino</h2>
+      <form id="form-treino">
+        <input type="text" id="nome-treino" placeholder="Nome do Treino" required>
+        <button type="submit">Criar Treino</button>
+      </form>
+    </section>
+    
+    <section class="adicionar-exercicios">
+      <h3>Adicionar Exercício ao Treino Selecionado</h3>
+      <label for="treino-selecao">Selecione o Treino:</label>
+      <select id="treino-selecao">
+        <option value="" disabled selected>Escolha o treino</option>
+      </select>
+      
+      <input type="text" id="nome-exercicio" placeholder="Nome do Exercício" required>
+      <input type="number" id="repeticoes" placeholder="Repetições" required>
+      <button onclick="adicionarExercicio()">Adicionar Exercício</button>
+    </section>
+    
+    <section id="treinos-lista">
+      <h2>Treinos Criados</h2>
+      <ul id="lista-treinos"></ul>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Cores */
+  :root {
+    --primary-color: #d7621a; /* Laranja */
+    --background-color: #2f2c2b; /* Preto */
+    --text-color: #413726;
+    --cor_clara: #fd8d32;
+    --cor_meio: #79451d;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: white;
+  }
+  
+  /* Login */
+  .login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  main{
+    max-width: 800px;
+    background-color: #e65c00;
+    margin: auto;
+  }
+  
+  .login-container {
+    background: var(--primary-color);
+    padding: 2em;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 2px 2px 10px 2px #e65c00;
+  }
+  
+  .login-container h1 {
+    margin-bottom: 1em;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 2px 2px 10px 2px #2f2c2b;
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  button {
+    background-color:white;
+    color: var(--background-color);
+    border: none;
+    padding: 10px 15px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow:2px 2px 10px 2px var(--background-color) ;
+    font-weight: bolder;
+  }
+  
+  button:hover {
+    background-color: var(--primary-color);
+    color: white
+  }
+  
+  /* Interface de Treino */
+  .main-container {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .aluno-selecao,
+  .treino-montagem,
+  #adicionar-exercicios {
+    margin: 1em 0;
+  }
+  
+  label, select , h1, h2, h3 {
+    color: white;
+    
+  }
+  .login-label{
+    background-color: #2f2c2b;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 8px;
+    margin: 0.5em 0;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  #adicionar-exercicios button {
+    margin-top: 1em;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
